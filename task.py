@@ -1,7 +1,6 @@
 class Matrix:
     """"
     Defining the constructor
-
     ul = upper left
     ur = upper right
     bl = below left
@@ -53,8 +52,8 @@ class Matrix:
         ul = (self.__ul * matrix.get_ul()) + (self.__ur * matrix.get_bl())
         ur = (self.__ul * matrix.get_ur()) + (self.__ur * matrix.get_br())
         bl = (self.__bl * matrix.get_ur()) + (self.__br * matrix.get_bl())
-	br = (self.__bl * matrix.get_ur()) + (self.__br * matrix.get_bl())
-	return Matrix(ul, ur, bl, br)
+        br = (self.__bl * matrix.get_ur()) + (self.__br * matrix.get_bl())
+        return Matrix(ul, ur, bl, br)
 
     # define the toString() method
 
